@@ -117,7 +117,7 @@ void tlcd_write_hexb(unsigned char data)
 void tlcd_write_hexi(unsigned int data)
 {
 	unsigned char low = data & 0xff;
-	unsigned char high = data & 0xff00;
+	unsigned char high = (data >> 8);
 	
 	TLCD_FS_PORT |= _BV(TLCD_FS_RS);
 	u_wait();
