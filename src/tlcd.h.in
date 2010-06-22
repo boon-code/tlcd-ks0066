@@ -1,0 +1,12 @@
+#ifndef _TLCD_H_
+#define _TLCD_H_
+
+void tlcd_init(void);
+void tlcd_str(const char* text);
+void tlcd_write_hexb(unsigned char data);
+void tlcd_write_hexi(unsigned int data);
+void tlcd_set_ddram(unsigned char addr);
+void return_home(void);
+void clear_screen(void);
+
+#endif
