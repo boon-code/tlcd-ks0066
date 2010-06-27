@@ -9,7 +9,7 @@
 #define INV_DATA_MASK ~DATA_MASK
 
 #define output_4hexbits(ni) if(ni > 0x09) 										\
-														{ write_byte(('a' - 0x09) + ni);} \
+														{ write_byte(('a' - 0x0a) + ni);} \
 														else 															\
 														{ write_byte('0' + ni);} 					\
 														short_wait()
